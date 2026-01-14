@@ -1,0 +1,2075 @@
+{
+    "version": "1.0",
+    "lastUpdated": "2026-01-14",
+    "description": "Auto-generated knowledge base from Trino database schema",
+    "catalogs": {
+        "lakehouse.ap_south1_gold": {
+            "description": "Tables from lakehouse.ap_south1_gold",
+            "tables": {
+                "mv_ads_active_period": {
+                    "description": "Table mv_ads_active_period",
+                    "columns": {
+                        "master_region_id": {
+                            "type": "varchar",
+                            "description": "Column master_region_id"
+                        },
+                        "master_platform_id": {
+                            "type": "varchar",
+                            "description": "Column master_platform_id"
+                        },
+                        "master_brand_id": {
+                            "type": "varchar",
+                            "description": "Column master_brand_id"
+                        },
+                        "min_date": {
+                            "type": "date",
+                            "description": "Column min_date"
+                        },
+                        "max_date": {
+                            "type": "date",
+                            "description": "Column max_date"
+                        }
+                    }
+                },
+                "mv_ads_ad_analysis": {
+                    "description": "Table mv_ads_ad_analysis",
+                    "columns": {
+                        "master_region_id": {
+                            "type": "varchar",
+                            "description": "Foreign key referencing t_master_region.master_region_id; indicates the region in which the platform operates."
+                        },
+                        "master_brand_id": {
+                            "type": "varchar",
+                            "description": "Column master_brand_id"
+                        },
+                        "master_brand_sub_brand_id": {
+                            "type": "varchar",
+                            "description": "Column master_brand_sub_brand_id"
+                        },
+                        "master_platform_id": {
+                            "type": "varchar",
+                            "description": "Column master_platform_id"
+                        },
+                        "panel_id": {
+                            "type": "varchar",
+                            "description": "Column panel_id"
+                        },
+                        "date": {
+                            "type": "date",
+                            "description": "Column date"
+                        },
+                        "platform_product_code": {
+                            "type": "varchar",
+                            "description": "Column platform_product_code"
+                        },
+                        "product_name": {
+                            "type": "varchar",
+                            "description": "Column product_name",
+                            "examples": [
+                                "ADVENTURE-41",
+                                "TOOFAN-06",
+                                "SUPERWALK-08",
+                                "NIGHTGLOW-02",
+                                "CHICAGO-11",
+                                "ELASTO-02(L)",
+                                "MISTY-12",
+                                "LIFESTYLE-02",
+                                "QUANTUM-25",
+                                "OXYGEN-01"
+                            ]
+                        },
+                        "campaign_type": {
+                            "type": "varchar",
+                            "description": "Column campaign_type"
+                        },
+                        "campaign_id": {
+                            "type": "varchar",
+                            "description": "Column campaign_id"
+                        },
+                        "campaign_name": {
+                            "type": "varchar",
+                            "description": "Column campaign_name"
+                        },
+                        "adgroup_id": {
+                            "type": "varchar",
+                            "description": "Column adgroup_id"
+                        },
+                        "adgroup_name": {
+                            "type": "varchar",
+                            "description": "Column adgroup_name"
+                        },
+                        "principal_category": {
+                            "type": "varchar",
+                            "description": "Column principal_category"
+                        },
+                        "main_category": {
+                            "type": "varchar",
+                            "description": "Column main_category"
+                        },
+                        "category": {
+                            "type": "varchar",
+                            "description": "Column category",
+                            "knownValues": [
+                                "Kids",
+                                "Men",
+                                "Women",
+                                "Face Wash",
+                                "Body Moisturization",
+                                "Face Moisturization",
+                                "Body Cleanser",
+                                "Hair Oil",
+                                "Henna Family",
+                                "Fk Exclusive Combo",
+                                "Indigo Powder",
+                                "Hair Wash",
+                                "Lip Care",
+                                "Baby Bath Essentials",
+                                "Ubtan Range",
+                                "Tummy Roll on",
+                                "Netraa",
+                                "Face Oils",
+                                "Hair Accessories",
+                                "Hair Mask"
+                            ]
+                        },
+                        "sub_category": {
+                            "type": "varchar",
+                            "description": "Column sub_category",
+                            "knownValues": [
+                                "Running",
+                                "Walking",
+                                "Sneaker",
+                                "Velcro",
+                                "Clogs",
+                                "Slipper",
+                                "Trekking",
+                                "Sandal",
+                                "Face Wash",
+                                "Malai Lotion",
+                                "Face Malai",
+                                "Soap",
+                                "Cold Pressed Oil",
+                                "All Season Hair Oil",
+                                "Henna",
+                                "Fk Exclusive Combo",
+                                "Indigo Powder",
+                                "Shampoo",
+                                "Summer Hair Oil Combo",
+                                "Skin Malai"
+                            ]
+                        },
+                        "sku": {
+                            "type": "varchar",
+                            "description": "Column sku"
+                        },
+                        "style_code": {
+                            "type": "varchar",
+                            "description": "Column style_code"
+                        },
+                        "model_code": {
+                            "type": "varchar",
+                            "description": "Column model_code"
+                        },
+                        "variant_code": {
+                            "type": "varchar",
+                            "description": "Column variant_code"
+                        },
+                        "ads_impression": {
+                            "type": "bigint",
+                            "description": "Column ads_impression"
+                        },
+                        "ads_click": {
+                            "type": "bigint",
+                            "description": "Column ads_click"
+                        },
+                        "ads_spend": {
+                            "type": "double",
+                            "description": "Column ads_spend"
+                        },
+                        "ads_sale": {
+                            "type": "double",
+                            "description": "Column ads_sale"
+                        },
+                        "ads_order": {
+                            "type": "bigint",
+                            "description": "Column ads_order"
+                        },
+                        "ads_unit": {
+                            "type": "bigint",
+                            "description": "Column ads_unit"
+                        },
+                        "direct_units": {
+                            "type": "bigint",
+                            "description": "Column direct_units"
+                        },
+                        "indirect_units": {
+                            "type": "bigint",
+                            "description": "Column indirect_units"
+                        },
+                        "direct_sales": {
+                            "type": "double",
+                            "description": "Column direct_sales"
+                        },
+                        "indirect_sales": {
+                            "type": "double",
+                            "description": "Column indirect_sales"
+                        }
+                    }
+                },
+                "mv_ads_cst_analysis": {
+                    "description": "Table mv_ads_cst_analysis",
+                    "columns": {
+                        "master_region_id": {
+                            "type": "varchar",
+                            "description": "Column master_region_id"
+                        },
+                        "master_platform_id": {
+                            "type": "varchar",
+                            "description": "Column master_platform_id"
+                        },
+                        "master_brand_id": {
+                            "type": "varchar",
+                            "description": "Column master_brand_id"
+                        },
+                        "master_brand_sub_brand_id": {
+                            "type": "varchar",
+                            "description": "Column master_brand_sub_brand_id"
+                        },
+                        "panel_id": {
+                            "type": "varchar",
+                            "description": "Column panel_id"
+                        },
+                        "date": {
+                            "type": "date",
+                            "description": "Column date"
+                        },
+                        "campaign_type": {
+                            "type": "varchar",
+                            "description": "Column campaign_type"
+                        },
+                        "campaign_id": {
+                            "type": "varchar",
+                            "description": "Column campaign_id"
+                        },
+                        "campaign_name": {
+                            "type": "varchar",
+                            "description": "Column campaign_name"
+                        },
+                        "adgroup_id": {
+                            "type": "varchar",
+                            "description": "Column adgroup_id"
+                        },
+                        "adgroup_name": {
+                            "type": "varchar",
+                            "description": "Column adgroup_name"
+                        },
+                        "targeting": {
+                            "type": "varchar",
+                            "description": "Column targeting"
+                        },
+                        "targeting_match_type": {
+                            "type": "varchar",
+                            "description": "Column targeting_match_type"
+                        },
+                        "targeting_bcg_type": {
+                            "type": "varchar(50)",
+                            "description": "Column targeting_bcg_type"
+                        },
+                        "cst": {
+                            "type": "varchar",
+                            "description": "Column cst"
+                        },
+                        "cst_bcg_type": {
+                            "type": "varchar(50)",
+                            "description": "Column cst_bcg_type"
+                        },
+                        "principal_category": {
+                            "type": "varchar",
+                            "description": "Column principal_category"
+                        },
+                        "main_category": {
+                            "type": "varchar",
+                            "description": "Column main_category"
+                        },
+                        "category": {
+                            "type": "varchar",
+                            "description": "Column category",
+                            "knownValues": [
+                                "Men",
+                                "Women",
+                                "Kids",
+                                "Accessories",
+                                "Concealer",
+                                "Lipstick",
+                                "Multi",
+                                "Loose Powder",
+                                "Foundation",
+                                "Primer",
+                                "Lip Liner",
+                                "Highlighter",
+                                "Mascara",
+                                "Beauty",
+                                "Electronics",
+                                "Blush",
+                                "Eyeshadow",
+                                "Liquid Blush",
+                                "Brush",
+                                "Eyeliner"
+                            ]
+                        },
+                        "sub_category": {
+                            "type": "varchar",
+                            "description": "Column sub_category",
+                            "knownValues": [
+                                "Liquid",
+                                "Multi",
+                                "Pencil",
+                                "Loose Powder",
+                                "Cream",
+                                "Pressed Powder",
+                                "Running",
+                                "Sneaker",
+                                "Trekking",
+                                "Clogs",
+                                "Slipper",
+                                "Walking",
+                                "School",
+                                "Bagpack",
+                                "Bag",
+                                "Hot Air Brush",
+                                "Face Wax",
+                                "Collagen Glass Skin Overnight Mask",
+                                "High Top",
+                                "Sandal"
+                            ]
+                        },
+                        "ads_impression": {
+                            "type": "bigint",
+                            "description": "Column ads_impression"
+                        },
+                        "ads_click": {
+                            "type": "bigint",
+                            "description": "Column ads_click"
+                        },
+                        "ads_spend": {
+                            "type": "double",
+                            "description": "Column ads_spend"
+                        },
+                        "ads_sale": {
+                            "type": "double",
+                            "description": "Column ads_sale"
+                        },
+                        "ads_order": {
+                            "type": "bigint",
+                            "description": "Column ads_order"
+                        },
+                        "ads_unit": {
+                            "type": "bigint",
+                            "description": "Column ads_unit"
+                        }
+                    }
+                },
+                "mv_ads_keyword_analysis": {
+                    "description": "Table mv_ads_keyword_analysis",
+                    "columns": {
+                        "master_region_id": {
+                            "type": "varchar",
+                            "description": "Column master_region_id"
+                        },
+                        "master_platform_id": {
+                            "type": "varchar",
+                            "description": "Column master_platform_id"
+                        },
+                        "master_brand_id": {
+                            "type": "varchar",
+                            "description": "Column master_brand_id"
+                        },
+                        "master_brand_sub_brand_id": {
+                            "type": "varchar",
+                            "description": "Column master_brand_sub_brand_id"
+                        },
+                        "panel_id": {
+                            "type": "varchar",
+                            "description": "Column panel_id"
+                        },
+                        "date": {
+                            "type": "date",
+                            "description": "Column date"
+                        },
+                        "campaign_type": {
+                            "type": "varchar",
+                            "description": "Column campaign_type"
+                        },
+                        "campaign_id": {
+                            "type": "varchar",
+                            "description": "Column campaign_id"
+                        },
+                        "campaign_name": {
+                            "type": "varchar",
+                            "description": "Column campaign_name"
+                        },
+                        "adgroup_id": {
+                            "type": "varchar",
+                            "description": "Column adgroup_id"
+                        },
+                        "adgroup_name": {
+                            "type": "varchar",
+                            "description": "Column adgroup_name"
+                        },
+                        "targeting": {
+                            "type": "varchar",
+                            "description": "Column targeting"
+                        },
+                        "targeting_match_type": {
+                            "type": "varchar",
+                            "description": "Column targeting_match_type"
+                        },
+                        "targeting_bcg_type": {
+                            "type": "varchar(50)",
+                            "description": "Column targeting_bcg_type"
+                        },
+                        "principal_category": {
+                            "type": "varchar",
+                            "description": "Column principal_category"
+                        },
+                        "main_category": {
+                            "type": "varchar",
+                            "description": "Column main_category"
+                        },
+                        "category": {
+                            "type": "varchar",
+                            "description": "Column category",
+                            "knownValues": [
+                                "Women",
+                                "Men",
+                                "Kids",
+                                "Liquid Blush",
+                                "Lipstick",
+                                "Primer",
+                                "Eyeliner",
+                                "Lip Gloss",
+                                "Multi",
+                                "Brush",
+                                "Eyeshadow",
+                                "Blush",
+                                "Highlighter",
+                                "Compact Powder",
+                                "Mascara",
+                                "Foundation",
+                                "Concealer",
+                                "Eyebrow",
+                                "Lip Liner",
+                                "Makeup Fixer"
+                            ]
+                        },
+                        "sub_category": {
+                            "type": "varchar",
+                            "description": "Column sub_category",
+                            "knownValues": [
+                                "Running",
+                                "Sneaker",
+                                "Sandal",
+                                "Clogs",
+                                "School",
+                                "Walking",
+                                "Cricket",
+                                "Trekking",
+                                "Slipper",
+                                "Liquid",
+                                "Bullet",
+                                "Gel",
+                                "Multi",
+                                "Synthetic Bristles",
+                                "Pressed Powder",
+                                "Crayon",
+                                "Pencil",
+                                "Loose Powder",
+                                "Cream",
+                                "Combo"
+                            ]
+                        },
+                        "ads_impression": {
+                            "type": "bigint",
+                            "description": "Column ads_impression"
+                        },
+                        "ads_click": {
+                            "type": "bigint",
+                            "description": "Column ads_click"
+                        },
+                        "ads_spend": {
+                            "type": "double",
+                            "description": "Column ads_spend"
+                        },
+                        "ads_sale": {
+                            "type": "double",
+                            "description": "Column ads_sale"
+                        },
+                        "ads_order": {
+                            "type": "bigint",
+                            "description": "Column ads_order"
+                        },
+                        "ads_unit": {
+                            "type": "bigint",
+                            "description": "Column ads_unit"
+                        }
+                    }
+                },
+                "mv_ads_overview_analysis": {
+                    "description": "Table mv_ads_overview_analysis",
+                    "columns": {
+                        "master_region_id": {
+                            "type": "varchar",
+                            "description": "Column master_region_id"
+                        },
+                        "master_brand_id": {
+                            "type": "varchar",
+                            "description": "Column master_brand_id"
+                        },
+                        "master_brand_sub_brand_id": {
+                            "type": "varchar",
+                            "description": "Column master_brand_sub_brand_id"
+                        },
+                        "master_platform_id": {
+                            "type": "varchar",
+                            "description": "Column master_platform_id"
+                        },
+                        "panel_id": {
+                            "type": "varchar",
+                            "description": "Column panel_id"
+                        },
+                        "date": {
+                            "type": "date",
+                            "description": "Column date"
+                        },
+                        "ads_impression": {
+                            "type": "bigint",
+                            "description": "Column ads_impression"
+                        },
+                        "ads_click": {
+                            "type": "bigint",
+                            "description": "Column ads_click"
+                        },
+                        "ads_spend": {
+                            "type": "double",
+                            "description": "Column ads_spend"
+                        },
+                        "ads_sale": {
+                            "type": "double",
+                            "description": "Column ads_sale"
+                        },
+                        "ads_order": {
+                            "type": "bigint",
+                            "description": "Column ads_order"
+                        },
+                        "ads_unit": {
+                            "type": "bigint",
+                            "description": "Column ads_unit"
+                        },
+                        "gross_view_seller": {
+                            "type": "bigint",
+                            "description": "Column gross_view_seller"
+                        },
+                        "gross_view_vendor": {
+                            "type": "bigint",
+                            "description": "Column gross_view_vendor"
+                        },
+                        "gross_view": {
+                            "type": "bigint",
+                            "description": "Column gross_view"
+                        },
+                        "organic_view": {
+                            "type": "bigint",
+                            "description": "Column organic_view"
+                        },
+                        "gross_sale_seller": {
+                            "type": "double",
+                            "description": "Column gross_sale_seller"
+                        },
+                        "gross_sale_vendor": {
+                            "type": "double",
+                            "description": "Column gross_sale_vendor"
+                        },
+                        "gross_sale": {
+                            "type": "double",
+                            "description": "Column gross_sale"
+                        },
+                        "organic_sale": {
+                            "type": "double",
+                            "description": "Column organic_sale"
+                        },
+                        "gross_order_seller": {
+                            "type": "bigint",
+                            "description": "Column gross_order_seller"
+                        },
+                        "gross_order_vendor": {
+                            "type": "bigint",
+                            "description": "Column gross_order_vendor"
+                        },
+                        "gross_order": {
+                            "type": "bigint",
+                            "description": "Column gross_order"
+                        },
+                        "organic_order": {
+                            "type": "bigint",
+                            "description": "Column organic_order"
+                        },
+                        "gross_unit_seller": {
+                            "type": "bigint",
+                            "description": "Column gross_unit_seller"
+                        },
+                        "gross_unit_vendor": {
+                            "type": "bigint",
+                            "description": "Column gross_unit_vendor"
+                        },
+                        "gross_unit": {
+                            "type": "bigint",
+                            "description": "Column gross_unit"
+                        },
+                        "organic_unit": {
+                            "type": "bigint",
+                            "description": "Column organic_unit"
+                        }
+                    }
+                },
+                "mv_ads_placement_analysis": {
+                    "description": "Table mv_ads_placement_analysis",
+                    "columns": {
+                        "master_region_id": {
+                            "type": "varchar",
+                            "description": "Column master_region_id"
+                        },
+                        "master_brand_id": {
+                            "type": "varchar",
+                            "description": "Column master_brand_id"
+                        },
+                        "master_brand_sub_brand_id": {
+                            "type": "varchar",
+                            "description": "Column master_brand_sub_brand_id"
+                        },
+                        "master_platform_id": {
+                            "type": "varchar",
+                            "description": "Column master_platform_id"
+                        },
+                        "panel_id": {
+                            "type": "varchar",
+                            "description": "Column panel_id"
+                        },
+                        "date": {
+                            "type": "date",
+                            "description": "Column date"
+                        },
+                        "campaign_type": {
+                            "type": "varchar",
+                            "description": "Column campaign_type"
+                        },
+                        "campaign_id": {
+                            "type": "varchar",
+                            "description": "Column campaign_id"
+                        },
+                        "campaign_name": {
+                            "type": "varchar",
+                            "description": "Column campaign_name"
+                        },
+                        "placement": {
+                            "type": "varchar",
+                            "description": "Column placement"
+                        },
+                        "principal_category": {
+                            "type": "varchar",
+                            "description": "Column principal_category"
+                        },
+                        "main_category": {
+                            "type": "varchar",
+                            "description": "Column main_category"
+                        },
+                        "category": {
+                            "type": "varchar",
+                            "description": "Column category",
+                            "knownValues": [
+                                "Kids",
+                                "Men",
+                                "Women",
+                                "Accessories",
+                                "Baby Bath Essentials",
+                                "Make-up Care",
+                                "Ubtan Range",
+                                "Hair Accessories",
+                                "Hair Mask",
+                                "Indigo Powder",
+                                "Face Wash",
+                                "Baby Malai Lotion",
+                                "Holi Range",
+                                "Lip Care",
+                                "Henna Family",
+                                "Hair Oil",
+                                "Face Moisturization",
+                                "Baby Face Malai",
+                                "Baby Oils",
+                                "Body Cleanser"
+                            ]
+                        },
+                        "sub_category": {
+                            "type": "varchar",
+                            "description": "Column sub_category",
+                            "knownValues": [
+                                "Sneaker",
+                                "Running",
+                                "Slipper",
+                                "Sandal",
+                                "Cricket",
+                                "Trekking",
+                                "Bag",
+                                "Clogs",
+                                "Walking",
+                                "Baby Powder",
+                                "Baby Malai Lotion",
+                                "Comb",
+                                "Baby Ubtan",
+                                "Indigo Powder",
+                                "Gulaal",
+                                "Face Wash",
+                                "Pure Oils",
+                                "Lip Butter",
+                                "Nutrimask",
+                                "Henna Combo"
+                            ]
+                        },
+                        "ads_impression": {
+                            "type": "bigint",
+                            "description": "Column ads_impression"
+                        },
+                        "ads_click": {
+                            "type": "bigint",
+                            "description": "Column ads_click"
+                        },
+                        "ads_spend": {
+                            "type": "double",
+                            "description": "Column ads_spend"
+                        },
+                        "ads_sale": {
+                            "type": "double",
+                            "description": "Column ads_sale"
+                        },
+                        "ads_order": {
+                            "type": "bigint",
+                            "description": "Column ads_order"
+                        },
+                        "ads_unit": {
+                            "type": "bigint",
+                            "description": "Column ads_unit"
+                        }
+                    }
+                },
+                "mv_ads_sales_analysis": {
+                    "description": "Table mv_ads_sales_analysis",
+                    "columns": {
+                        "master_region_id": {
+                            "type": "varchar",
+                            "description": "Column master_region_id"
+                        },
+                        "master_brand_id": {
+                            "type": "varchar",
+                            "description": "Column master_brand_id"
+                        },
+                        "master_brand_sub_brand_id": {
+                            "type": "varchar",
+                            "description": "Column master_brand_sub_brand_id"
+                        },
+                        "master_platform_id": {
+                            "type": "varchar",
+                            "description": "Column master_platform_id"
+                        },
+                        "panel_id": {
+                            "type": "varchar",
+                            "description": "Column panel_id"
+                        },
+                        "date": {
+                            "type": "date",
+                            "description": "Column date"
+                        },
+                        "platform_product_code": {
+                            "type": "varchar",
+                            "description": "Column platform_product_code"
+                        },
+                        "principal_category": {
+                            "type": "varchar",
+                            "description": "Column principal_category"
+                        },
+                        "main_category": {
+                            "type": "varchar",
+                            "description": "Column main_category"
+                        },
+                        "category": {
+                            "type": "varchar",
+                            "description": "Column category",
+                            "knownValues": [
+                                "Lip Gloss",
+                                "Lip Balm",
+                                "Kajal",
+                                "Brush",
+                                "Lip Liner",
+                                "Lipstick",
+                                "Compact Powder",
+                                "Concealer",
+                                "Nail Paint",
+                                "Eyeshadow",
+                                "Mascara",
+                                "Makeup Kit",
+                                "Foundation",
+                                "Blush",
+                                "Eyeliner",
+                                "Liquid Blush",
+                                "Lip Palette",
+                                "Eyebrow",
+                                "Makeup Fixer",
+                                "Makeup Remover"
+                            ]
+                        },
+                        "sub_category": {
+                            "type": "varchar",
+                            "description": "Column sub_category",
+                            "knownValues": [
+                                "Liquid",
+                                "Balm",
+                                "Pencil",
+                                "Synthetic Bristles",
+                                "Bullet",
+                                "Loose Powder",
+                                "Cream",
+                                "Gel",
+                                "Pressed Powder",
+                                "Kit",
+                                "Crayon",
+                                "Nonwoven Fabrics",
+                                "Palette",
+                                "Metal",
+                                "Lip Gloss",
+                                "Oil",
+                                "Powder",
+                                "Pen",
+                                "Hair Removal",
+                                "Hair Straightner"
+                            ]
+                        },
+                        "sku": {
+                            "type": "varchar",
+                            "description": "Column sku"
+                        },
+                        "style_code": {
+                            "type": "varchar",
+                            "description": "Column style_code"
+                        },
+                        "model_code": {
+                            "type": "varchar",
+                            "description": "Column model_code"
+                        },
+                        "variant_code": {
+                            "type": "varchar",
+                            "description": "Column variant_code"
+                        },
+                        "product_name": {
+                            "type": "varchar",
+                            "description": "Column product_name",
+                            "examples": [
+                                "LG20",
+                                "LB01",
+                                "NT31",
+                                "KJ10",
+                                "BRF07",
+                                "LT01",
+                                "LP05",
+                                "LB15",
+                                "LS20",
+                                "P424"
+                            ]
+                        },
+                        "ads_impression": {
+                            "type": "bigint",
+                            "description": "Column ads_impression"
+                        },
+                        "ads_click": {
+                            "type": "bigint",
+                            "description": "Column ads_click"
+                        },
+                        "ads_spend": {
+                            "type": "double",
+                            "description": "Column ads_spend"
+                        },
+                        "ads_sale": {
+                            "type": "double",
+                            "description": "Column ads_sale"
+                        },
+                        "ads_order": {
+                            "type": "bigint",
+                            "description": "Column ads_order"
+                        },
+                        "ads_unit": {
+                            "type": "bigint",
+                            "description": "Column ads_unit"
+                        },
+                        "gross_view_seller": {
+                            "type": "bigint",
+                            "description": "Column gross_view_seller"
+                        },
+                        "gross_view_vendor": {
+                            "type": "bigint",
+                            "description": "Column gross_view_vendor"
+                        },
+                        "gross_view": {
+                            "type": "bigint",
+                            "description": "Column gross_view"
+                        },
+                        "organic_view": {
+                            "type": "bigint",
+                            "description": "Column organic_view"
+                        },
+                        "gross_sale_seller": {
+                            "type": "double",
+                            "description": "Column gross_sale_seller"
+                        },
+                        "gross_sale_vendor": {
+                            "type": "double",
+                            "description": "Column gross_sale_vendor"
+                        },
+                        "gross_sale": {
+                            "type": "double",
+                            "description": "Column gross_sale"
+                        },
+                        "organic_sale": {
+                            "type": "double",
+                            "description": "Column organic_sale"
+                        },
+                        "gross_order_seller": {
+                            "type": "bigint",
+                            "description": "Column gross_order_seller"
+                        },
+                        "gross_order_vendor": {
+                            "type": "bigint",
+                            "description": "Column gross_order_vendor"
+                        },
+                        "gross_order": {
+                            "type": "bigint",
+                            "description": "Column gross_order"
+                        },
+                        "organic_order": {
+                            "type": "bigint",
+                            "description": "Column organic_order"
+                        },
+                        "gross_unit_seller": {
+                            "type": "bigint",
+                            "description": "Column gross_unit_seller"
+                        },
+                        "gross_unit_vendor": {
+                            "type": "bigint",
+                            "description": "Column gross_unit_vendor"
+                        },
+                        "gross_unit": {
+                            "type": "bigint",
+                            "description": "Column gross_unit"
+                        },
+                        "organic_unit": {
+                            "type": "bigint",
+                            "description": "Column organic_unit"
+                        },
+                        "direct_sale": {
+                            "type": "double",
+                            "description": "Column direct_sale"
+                        },
+                        "indirect_sale": {
+                            "type": "double",
+                            "description": "Column indirect_sale"
+                        },
+                        "net_sale": {
+                            "type": "double",
+                            "description": "Column net_sale"
+                        },
+                        "direct_unit": {
+                            "type": "bigint",
+                            "description": "Column direct_unit"
+                        },
+                        "indirect_unit": {
+                            "type": "bigint",
+                            "description": "Column indirect_unit"
+                        },
+                        "net_unit": {
+                            "type": "bigint",
+                            "description": "Column net_unit"
+                        }
+                    }
+                }
+            }
+        },
+        "database.global": {
+            "description": "Tables from database.global",
+            "tables": {
+                "t_brand_unmapped_campaign": {
+                    "description": "Table t_brand_unmapped_campaign",
+                    "columns": {
+                        "brand_unmapped_campaign_id": {
+                            "type": "uuid",
+                            "description": "Column brand_unmapped_campaign_id"
+                        },
+                        "master_region_id": {
+                            "type": "uuid",
+                            "description": "Column master_region_id"
+                        },
+                        "master_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_id"
+                        },
+                        "master_platform_id": {
+                            "type": "uuid",
+                            "description": "Column master_platform_id"
+                        },
+                        "platform_name": {
+                            "type": "varchar",
+                            "description": "Column platform_name",
+                            "knownValues": [
+                                "Swiggy",
+                                "Myntra",
+                                "Flipkart",
+                                "Zepto",
+                                "Blinkit",
+                                "Nykaa",
+                                "Amazon"
+                            ]
+                        },
+                        "campaign_type": {
+                            "type": "varchar(50)",
+                            "description": "Column campaign_type"
+                        },
+                        "campaign_id": {
+                            "type": "varchar(100)",
+                            "description": "Column campaign_id"
+                        },
+                        "campaign_name": {
+                            "type": "varchar",
+                            "description": "Column campaign_name"
+                        },
+                        "adgroup_id": {
+                            "type": "varchar(100)",
+                            "description": "Column adgroup_id"
+                        },
+                        "adgroup_name": {
+                            "type": "varchar",
+                            "description": "Column adgroup_name"
+                        },
+                        "status": {
+                            "type": "varchar",
+                            "description": "Column status"
+                        }
+                    }
+                },
+                "t_brand_unmapped_product": {
+                    "description": "Table t_brand_unmapped_product",
+                    "columns": {
+                        "brand_unmapped_product_id": {
+                            "type": "uuid",
+                            "description": "Column brand_unmapped_product_id"
+                        },
+                        "master_region_id": {
+                            "type": "uuid",
+                            "description": "Column master_region_id"
+                        },
+                        "master_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_id"
+                        },
+                        "master_platform_id": {
+                            "type": "uuid",
+                            "description": "Column master_platform_id"
+                        },
+                        "platform_name": {
+                            "type": "varchar",
+                            "description": "Column platform_name",
+                            "knownValues": [
+                                "Amazon",
+                                "Flipkart",
+                                "Myntra",
+                                "Nykaa",
+                                "Zepto",
+                                "Blinkit",
+                                "Swiggy"
+                            ]
+                        },
+                        "platform_product_code": {
+                            "type": "varchar",
+                            "description": "Column platform_product_code"
+                        },
+                        "platform_product_title": {
+                            "type": "varchar",
+                            "description": "Column platform_product_title"
+                        },
+                        "sku": {
+                            "type": "varchar",
+                            "description": "Column sku"
+                        },
+                        "status": {
+                            "type": "varchar",
+                            "description": "Column status"
+                        }
+                    }
+                },
+                "t_master_brand": {
+                    "description": "Table t_master_brand",
+                    "columns": {
+                        "master_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_id"
+                        },
+                        "brand_name": {
+                            "type": "varchar",
+                            "description": "Column brand_name",
+                            "knownValues": [
+                                "Asian",
+                                "Nat Habit",
+                                "Urban Group",
+                                "Mars"
+                            ]
+                        },
+                        "additional_data": {
+                            "type": "json",
+                            "description": "Column additional_data"
+                        },
+                        "status": {
+                            "type": "varchar",
+                            "description": "Column status"
+                        }
+                    }
+                },
+                "t_master_brand_campaign": {
+                    "description": "Table t_master_brand_campaign",
+                    "columns": {
+                        "master_brand_campaign_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_campaign_id"
+                        },
+                        "master_region_id": {
+                            "type": "uuid",
+                            "description": "Column master_region_id"
+                        },
+                        "master_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_id"
+                        },
+                        "master_brand_sub_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_sub_brand_id"
+                        },
+                        "master_platform_id": {
+                            "type": "uuid",
+                            "description": "Column master_platform_id"
+                        },
+                        "platform_name": {
+                            "type": "varchar",
+                            "description": "Column platform_name",
+                            "knownValues": [
+                                "Amazon",
+                                "Flipkart",
+                                "Myntra",
+                                "Swiggy",
+                                "Blinkit",
+                                "Zepto",
+                                "Nykaa"
+                            ]
+                        },
+                        "campaign_type": {
+                            "type": "varchar",
+                            "description": "Column campaign_type"
+                        },
+                        "external_campaign_id": {
+                            "type": "varchar",
+                            "description": "Column external_campaign_id"
+                        },
+                        "campaign_id": {
+                            "type": "varchar",
+                            "description": "Column campaign_id"
+                        },
+                        "campaign_name": {
+                            "type": "varchar",
+                            "description": "Column campaign_name"
+                        },
+                        "adgroup_id": {
+                            "type": "varchar",
+                            "description": "Column adgroup_id"
+                        },
+                        "adgroup_name": {
+                            "type": "varchar",
+                            "description": "Column adgroup_name"
+                        },
+                        "master_brand_principal_category_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_principal_category_id"
+                        },
+                        "master_brand_main_category_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_main_category_id"
+                        },
+                        "master_brand_category_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_category_id"
+                        },
+                        "master_brand_sub_category_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_sub_category_id"
+                        },
+                        "product_name": {
+                            "type": "varchar",
+                            "description": "Column product_name",
+                            "examples": [
+                                "Dual Tooth Comb + 2x TriLeaf Nutrimask",
+                                "Neem Bhringraj Summer Hair Oil - 100 ml",
+                                "Herbal Wax Powder",
+                                "KJ10",
+                                "Neem Bhringraj Winter Hair Oil - 100 ml",
+                                "Trileaf Rosemary Shampoo - 240g",
+                                "Multi",
+                                "UY - HRS - 200 ML",
+                                "Neem Comb - Wide Tooth",
+                                "P425"
+                            ]
+                        },
+                        "status": {
+                            "type": "varchar",
+                            "description": "Column status"
+                        }
+                    }
+                },
+                "t_master_brand_category": {
+                    "description": "Table t_master_brand_category",
+                    "columns": {
+                        "master_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_id"
+                        },
+                        "master_brand_category_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_category_id"
+                        },
+                        "category": {
+                            "type": "varchar(100)",
+                            "description": "Column category",
+                            "knownValues": [
+                                "Kids",
+                                "Men",
+                                "Accessories",
+                                "Women",
+                                "Hair Mask",
+                                "Fk Exclusive Combo",
+                                "Face Moisturization",
+                                "Face Wash",
+                                "Body Accessories",
+                                "Baby Face Malai",
+                                "Adult Massage Oil",
+                                "Hair Oil",
+                                "Body Cleanser",
+                                "Indigo Powder",
+                                "Multi",
+                                "Sampling",
+                                "Baby Diaper Rash Cream",
+                                "Make-up Care",
+                                "Baby Bath Essentials",
+                                "Ubtan Range"
+                            ]
+                        }
+                    }
+                },
+                "t_master_brand_cst": {
+                    "description": "Table t_master_brand_cst",
+                    "columns": {
+                        "master_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_id"
+                        },
+                        "master_brand_cst_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_cst_id"
+                        },
+                        "platform": {
+                            "type": "varchar(50)",
+                            "description": "Column platform"
+                        },
+                        "cst": {
+                            "type": "varchar",
+                            "description": "Column cst"
+                        },
+                        "crawl_status": {
+                            "type": "boolean",
+                            "description": "Column crawl_status"
+                        },
+                        "status": {
+                            "type": "varchar(50)",
+                            "description": "Column status"
+                        },
+                        "input_source": {
+                            "type": "varchar(50)",
+                            "description": "Column input_source"
+                        },
+                        "cst_type": {
+                            "type": "varchar(50)",
+                            "description": "Column cst_type"
+                        },
+                        "bcg_type": {
+                            "type": "varchar(50)",
+                            "description": "Column bcg_type"
+                        },
+                        "created_by": {
+                            "type": "uuid",
+                            "description": "Column created_by"
+                        },
+                        "updated_by": {
+                            "type": "uuid",
+                            "description": "Column updated_by"
+                        },
+                        "created_time_stamp": {
+                            "type": "timestamp(6)",
+                            "description": "Column created_time_stamp"
+                        },
+                        "updated_time_stamp": {
+                            "type": "timestamp(6)",
+                            "description": "Column updated_time_stamp"
+                        },
+                        "reasoning": {
+                            "type": "varchar(512)",
+                            "description": "Column reasoning"
+                        },
+                        "accuracy_level": {
+                            "type": "double",
+                            "description": "Column accuracy_level"
+                        },
+                        "master_platform_id": {
+                            "type": "uuid",
+                            "description": "Column master_platform_id"
+                        }
+                    }
+                },
+                "t_master_brand_main_category": {
+                    "description": "Table t_master_brand_main_category",
+                    "columns": {
+                        "master_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_id"
+                        },
+                        "master_brand_main_category_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_main_category_id"
+                        },
+                        "main_category": {
+                            "type": "varchar(100)",
+                            "description": "Column main_category"
+                        }
+                    }
+                },
+                "t_master_brand_platform_cred": {
+                    "description": "Table t_master_brand_platform_cred",
+                    "columns": {
+                        "master_brand_platform_cred_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_platform_cred_id"
+                        },
+                        "master_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_id"
+                        },
+                        "master_platform_id": {
+                            "type": "uuid",
+                            "description": "Column master_platform_id"
+                        },
+                        "platform_name": {
+                            "type": "varchar",
+                            "description": "Column platform_name",
+                            "knownValues": [
+                                "Flipkart",
+                                "Blinkit",
+                                "Amazon",
+                                "Myntra"
+                            ]
+                        },
+                        "panel_id": {
+                            "type": "uuid",
+                            "description": "Column panel_id"
+                        },
+                        "panel_name": {
+                            "type": "varchar",
+                            "description": "Column panel_name"
+                        },
+                        "platform_type": {
+                            "type": "varchar",
+                            "description": "Column platform_type"
+                        },
+                        "additional_data": {
+                            "type": "json",
+                            "description": "Column additional_data"
+                        },
+                        "status": {
+                            "type": "varchar",
+                            "description": "Column status"
+                        }
+                    }
+                },
+                "t_master_brand_principal_category": {
+                    "description": "Table t_master_brand_principal_category",
+                    "columns": {
+                        "master_brand_principal_category_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_principal_category_id"
+                        },
+                        "master_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_id"
+                        },
+                        "principal_category": {
+                            "type": "varchar",
+                            "description": "Column principal_category"
+                        }
+                    }
+                },
+                "t_master_brand_product": {
+                    "description": "Table t_master_brand_product",
+                    "columns": {
+                        "master_brand_product_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_product_id"
+                        },
+                        "master_region_id": {
+                            "type": "uuid",
+                            "description": "Column master_region_id"
+                        },
+                        "master_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_id"
+                        },
+                        "master_brand_sub_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_sub_brand_id"
+                        },
+                        "master_platform_id": {
+                            "type": "uuid",
+                            "description": "Column master_platform_id"
+                        },
+                        "platform_name": {
+                            "type": "varchar",
+                            "description": "Column platform_name",
+                            "knownValues": [
+                                "Amazon",
+                                "Flipkart",
+                                "Myntra",
+                                "Swiggy",
+                                "Purplle",
+                                "Nykaa",
+                                "Zepto",
+                                "Blinkit"
+                            ]
+                        },
+                        "platform_product_code": {
+                            "type": "varchar",
+                            "description": "Column platform_product_code"
+                        },
+                        "platform_product_title": {
+                            "type": "varchar",
+                            "description": "Column platform_product_title"
+                        },
+                        "short_name": {
+                            "type": "varchar",
+                            "description": "Column short_name"
+                        },
+                        "product_name": {
+                            "type": "varchar",
+                            "description": "Column product_name",
+                            "examples": [
+                                "AMT-13-POLO",
+                                "Bitter Milk Tikta Cream Face Wash",
+                                "CARNIVAL",
+                                "BOSS-32",
+                                "LS15",
+                                "PL",
+                                "NP07",
+                                "FREEDOM-11",
+                                "LP05",
+                                "NT03"
+                            ]
+                        },
+                        "sku": {
+                            "type": "varchar",
+                            "description": "Column sku"
+                        },
+                        "style_code": {
+                            "type": "varchar",
+                            "description": "Column style_code"
+                        },
+                        "model_code": {
+                            "type": "varchar",
+                            "description": "Column model_code"
+                        },
+                        "variant_code": {
+                            "type": "varchar",
+                            "description": "Column variant_code"
+                        },
+                        "master_brand_principal_category_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_principal_category_id"
+                        },
+                        "master_brand_main_category_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_main_category_id"
+                        },
+                        "master_brand_category_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_category_id"
+                        },
+                        "master_brand_sub_category_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_sub_category_id"
+                        },
+                        "gst_perc": {
+                            "type": "integer",
+                            "description": "Column gst_perc"
+                        },
+                        "mrp": {
+                            "type": "double",
+                            "description": "Column mrp"
+                        },
+                        "csp": {
+                            "type": "double",
+                            "description": "Column csp"
+                        }
+                    }
+                },
+                "t_master_brand_sub_brand": {
+                    "description": "Table t_master_brand_sub_brand",
+                    "columns": {
+                        "master_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_id"
+                        },
+                        "master_brand_sub_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_sub_brand_id"
+                        },
+                        "sub_brand_name": {
+                            "type": "varchar",
+                            "description": "Column sub_brand_name"
+                        }
+                    }
+                },
+                "t_master_brand_sub_category": {
+                    "description": "Table t_master_brand_sub_category",
+                    "columns": {
+                        "master_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_id"
+                        },
+                        "master_brand_sub_category_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_sub_category_id"
+                        },
+                        "sub_category": {
+                            "type": "varchar(100)",
+                            "description": "Column sub_category",
+                            "knownValues": [
+                                "Ethnic wear",
+                                "Sneaker",
+                                "Belt",
+                                "Track Pant",
+                                "Sandal",
+                                "High Top",
+                                "Velcro",
+                                "T-shirt",
+                                "School",
+                                "Socks",
+                                "Cricket",
+                                "Trekking",
+                                "Organizer pouch",
+                                "Bag",
+                                "Gym",
+                                "Jacket",
+                                "Shakers",
+                                "Shorts",
+                                "Running",
+                                "Cleaning Solution"
+                            ]
+                        }
+                    }
+                },
+                "t_master_brand_targeting": {
+                    "description": "Table t_master_brand_targeting",
+                    "columns": {
+                        "master_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_id"
+                        },
+                        "master_brand_targeting_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_targeting_id"
+                        },
+                        "platform": {
+                            "type": "varchar(50)",
+                            "description": "Column platform"
+                        },
+                        "targeting": {
+                            "type": "varchar",
+                            "description": "Column targeting"
+                        },
+                        "crawl_status": {
+                            "type": "boolean",
+                            "description": "Column crawl_status"
+                        },
+                        "status": {
+                            "type": "varchar(50)",
+                            "description": "Column status"
+                        },
+                        "input_source": {
+                            "type": "varchar(50)",
+                            "description": "Column input_source"
+                        },
+                        "targeting_type": {
+                            "type": "varchar(50)",
+                            "description": "Column targeting_type"
+                        },
+                        "bcg_type": {
+                            "type": "varchar(50)",
+                            "description": "Column bcg_type"
+                        },
+                        "created_by": {
+                            "type": "uuid",
+                            "description": "Column created_by"
+                        },
+                        "updated_by": {
+                            "type": "uuid",
+                            "description": "Column updated_by"
+                        },
+                        "created_time_stamp": {
+                            "type": "timestamp(6)",
+                            "description": "Column created_time_stamp"
+                        },
+                        "updated_time_stamp": {
+                            "type": "timestamp(6)",
+                            "description": "Column updated_time_stamp"
+                        },
+                        "to_transfer": {
+                            "type": "boolean",
+                            "description": "Column to_transfer"
+                        },
+                        "to_transfer_reason": {
+                            "type": "varchar",
+                            "description": "Column to_transfer_reason"
+                        },
+                        "master_platform_id": {
+                            "type": "uuid",
+                            "description": "Column master_platform_id"
+                        }
+                    }
+                },
+                "t_master_platform": {
+                    "description": "Table t_master_platform",
+                    "columns": {
+                        "master_region_id": {
+                            "type": "uuid",
+                            "description": "Foreign key referencing t_master_region.master_region_id; indicates the region in which the platform operates."
+                        },
+                        "master_platform_id": {
+                            "type": "uuid",
+                            "description": "Primary key; unique identifier for each platform."
+                        },
+                        "platform_name": {
+                            "type": "varchar(50)",
+                            "description": "Descriptive name of the platform.",
+                            "knownValues": [
+                                "Meesho",
+                                "Amazon",
+                                "Namshi",
+                                "Carrefour",
+                                "Ajio",
+                                "Flipkart",
+                                "Swiggy Instamart",
+                                "SharafDg",
+                                "Careem",
+                                "Flipkart Minutes",
+                                "Noon",
+                                "Blinkit",
+                                "Amazon J3J",
+                                "Zepto",
+                                "Purplle",
+                                "Myntra",
+                                "Unified",
+                                "Nykaa"
+                            ]
+                        }
+                    }
+                },
+                "t_master_region": {
+                    "description": "Table t_master_region",
+                    "columns": {
+                        "master_region_id": {
+                            "type": "uuid",
+                            "description": "Primary key; unique ID for each region."
+                        },
+                        "region_name": {
+                            "type": "varchar(100)",
+                            "description": "Name of the region (e.g., ap_south1, me_central1)."
+                        },
+                        "country": {
+                            "type": "varchar",
+                            "description": "Column country"
+                        }
+                    }
+                },
+                "v_master_campaign": {
+                    "description": "Table v_master_campaign",
+                    "columns": {
+                        "master_region_id": {
+                            "type": "uuid",
+                            "description": "Column master_region_id"
+                        },
+                        "master_platform_id": {
+                            "type": "uuid",
+                            "description": "Column master_platform_id"
+                        },
+                        "master_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_id"
+                        },
+                        "master_brand_sub_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_sub_brand_id"
+                        },
+                        "campaign_type": {
+                            "type": "varchar",
+                            "description": "Column campaign_type"
+                        },
+                        "campaign_id": {
+                            "type": "varchar",
+                            "description": "Column campaign_id"
+                        },
+                        "campaign_name": {
+                            "type": "varchar",
+                            "description": "Column campaign_name"
+                        },
+                        "adgroup_id": {
+                            "type": "varchar",
+                            "description": "Column adgroup_id"
+                        },
+                        "adgroup_name": {
+                            "type": "varchar",
+                            "description": "Column adgroup_name"
+                        },
+                        "principal_category": {
+                            "type": "varchar",
+                            "description": "Column principal_category"
+                        },
+                        "main_category": {
+                            "type": "varchar",
+                            "description": "Column main_category"
+                        },
+                        "category": {
+                            "type": "varchar",
+                            "description": "Column category",
+                            "knownValues": [
+                                "Kids",
+                                "Men",
+                                "Accessories",
+                                "Women",
+                                "Hair Mask",
+                                "Face Moisturization",
+                                "Face Wash",
+                                "Body Accessories",
+                                "Hair Oil",
+                                "Body Cleanser",
+                                "Indigo Powder",
+                                "Multi",
+                                "Make-up Care",
+                                "Baby Bath Essentials",
+                                "Ubtan Range",
+                                "Diwali Range",
+                                "Hair Accessories",
+                                "Lip Care",
+                                "Face Oils",
+                                "Baby Care Combo"
+                            ]
+                        },
+                        "sub_category": {
+                            "type": "varchar",
+                            "description": "Column sub_category",
+                            "knownValues": [
+                                "Sneaker",
+                                "Sandal",
+                                "Cricket",
+                                "Trekking",
+                                "Bag",
+                                "Running",
+                                "Slipper",
+                                "Clogs",
+                                "Walking",
+                                "Baby Powder",
+                                "Facial Oil Combo",
+                                "Flora Jal",
+                                "Underarm Ubtan",
+                                "Comb Combo",
+                                "Comb",
+                                "Baby Ubtan",
+                                "Nutrimask Combo",
+                                "Indigo Powder",
+                                "Gulaal",
+                                "Face Wash"
+                            ]
+                        },
+                        "mapping": {
+                            "type": "varchar",
+                            "description": "Column mapping"
+                        }
+                    }
+                },
+                "v_master_product": {
+                    "description": "Table v_master_product",
+                    "columns": {
+                        "master_region_id": {
+                            "type": "uuid",
+                            "description": "Column master_region_id"
+                        },
+                        "master_platform_id": {
+                            "type": "uuid",
+                            "description": "Column master_platform_id"
+                        },
+                        "master_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_id"
+                        },
+                        "master_brand_sub_brand_id": {
+                            "type": "uuid",
+                            "description": "Column master_brand_sub_brand_id"
+                        },
+                        "principal_category": {
+                            "type": "varchar",
+                            "description": "Column principal_category"
+                        },
+                        "main_category": {
+                            "type": "varchar",
+                            "description": "Column main_category"
+                        },
+                        "category": {
+                            "type": "varchar",
+                            "description": "Column category",
+                            "knownValues": [
+                                "Men",
+                                "Unmapped",
+                                "Women",
+                                "Concealer",
+                                "Combo",
+                                "Lipstick",
+                                "Hair Wash",
+                                "Body Cleanser",
+                                "Henna Family",
+                                "Lip Stains & Tints",
+                                "Face Moisturization",
+                                "Lip Care",
+                                "Lip Balm",
+                                "Kids",
+                                "Hair Oil",
+                                "Hair Accessories",
+                                "Foundation",
+                                "Makeup Remover",
+                                "Nail Paint",
+                                "Lip Liner"
+                            ]
+                        },
+                        "sub_category": {
+                            "type": "varchar",
+                            "description": "Column sub_category",
+                            "knownValues": [
+                                "Running",
+                                "Gym",
+                                "Sneaker",
+                                "Unmapped",
+                                "Walking",
+                                "Slipper",
+                                "Cream",
+                                "Combo",
+                                "Sandal",
+                                "Bullet",
+                                "Liquid",
+                                "Shampoo",
+                                "Soap",
+                                "Clogs",
+                                "Henna Combo",
+                                "Face Malai",
+                                "Lip Butter",
+                                "Henna",
+                                "Balm",
+                                "High Top"
+                            ]
+                        },
+                        "platform_product_code": {
+                            "type": "varchar",
+                            "description": "Column platform_product_code"
+                        },
+                        "sku": {
+                            "type": "varchar",
+                            "description": "Column sku"
+                        },
+                        "style_code": {
+                            "type": "varchar",
+                            "description": "Column style_code"
+                        },
+                        "model_code": {
+                            "type": "varchar",
+                            "description": "Column model_code"
+                        },
+                        "variant_code": {
+                            "type": "varchar",
+                            "description": "Column variant_code"
+                        },
+                        "product_name": {
+                            "type": "varchar",
+                            "description": "Column product_name",
+                            "examples": [
+                                "FORTUNER-04",
+                                "RIDER",
+                                "AIRWEAVE",
+                                "Unmapped",
+                                "WONDER-11",
+                                "HATTRICK",
+                                "DAISY-11",
+                                "SLIDER-31",
+                                "SUPERFLY-05",
+                                "URBAN-01"
+                            ]
+                        },
+                        "short_name": {
+                            "type": "varchar",
+                            "description": "Column short_name"
+                        },
+                        "gst_perc": {
+                            "type": "integer",
+                            "description": "Column gst_perc"
+                        },
+                        "mapping": {
+                            "type": "varchar",
+                            "description": "Column mapping"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "commonPatterns": {
+        "brandFilter": {
+            "description": "How to filter by brand name",
+            "pattern": "JOIN database.global.t_master_brand b ON CAST(a.master_brand_id AS uuid) = b.master_brand_id WHERE LOWER(b.brand_name) = 'brandname'"
+        },
+        "platformFilter": {
+            "description": "How to filter by platform/marketplace",
+            "pattern": "JOIN database.global.t_master_platform p ON CAST(a.master_platform_id AS uuid) = p.master_platform_id WHERE LOWER(p.platform_name) = 'amazon'"
+        },
+        "monthComparison": {
+            "description": "Compare same month across years",
+            "pattern": "WHERE EXTRACT(MONTH FROM date) = 1 AND EXTRACT(YEAR FROM date) IN (2025, 2026) GROUP BY EXTRACT(YEAR FROM date)"
+        },
+        "categoryFilter": {
+            "description": "Filter by category (case-insensitive)",
+            "pattern": "WHERE LOWER(category) = 'men'"
+        }
+    },
+    "entityRecognition": {
+        "brands": {
+            "description": "Company/brand names - stored in t_master_brand",
+            "examples": [
+                "Asian",
+                "Nat Habit",
+                "Urban Group",
+                "Mars"
+            ],
+            "identifiers": [
+                "Usually company names without codes or numbers"
+            ]
+        },
+        "products": {
+            "description": "Product SKUs/names - stored in product_name column",
+            "examples": [
+                "ADVENTURE-41",
+                "TOOFAN-06",
+                "SUPERWALK-08",
+                "NIGHTGLOW-02",
+                "CHICAGO-11",
+                "ELASTO-02(L)",
+                "MISTY-12",
+                "LIFESTYLE-02",
+                "QUANTUM-25",
+                "OXYGEN-01"
+            ],
+            "identifiers": [
+                "Often contain codes, numbers, or technical identifiers"
+            ]
+        },
+        "categories": {
+            "description": "Product categories",
+            "values": [
+                "Kids",
+                "Men",
+                "Women",
+                "Face Wash",
+                "Body Moisturization",
+                "Face Moisturization",
+                "Body Cleanser",
+                "Hair Oil",
+                "Henna Family",
+                "Fk Exclusive Combo",
+                "Indigo Powder",
+                "Hair Wash",
+                "Lip Care",
+                "Baby Bath Essentials",
+                "Ubtan Range",
+                "Tummy Roll on",
+                "Netraa",
+                "Face Oils",
+                "Hair Accessories",
+                "Hair Mask",
+                "Accessories",
+                "Concealer",
+                "Lipstick",
+                "Multi",
+                "Loose Powder",
+                "Foundation",
+                "Primer",
+                "Lip Liner",
+                "Highlighter",
+                "Mascara",
+                "Beauty",
+                "Electronics",
+                "Blush",
+                "Eyeshadow",
+                "Liquid Blush",
+                "Brush",
+                "Eyeliner",
+                "Lip Gloss",
+                "Compact Powder",
+                "Eyebrow",
+                "Makeup Fixer",
+                "Make-up Care",
+                "Baby Malai Lotion",
+                "Holi Range",
+                "Baby Face Malai",
+                "Baby Oils",
+                "Lip Balm",
+                "Kajal",
+                "Nail Paint",
+                "Makeup Kit",
+                "Lip Palette",
+                "Makeup Remover",
+                "Body Accessories",
+                "Adult Massage Oil",
+                "Sampling",
+                "Baby Diaper Rash Cream",
+                "Diwali Range",
+                "Baby Care Combo",
+                "Unmapped",
+                "Combo",
+                "Lip Stains & Tints"
+            ]
+        }
+    },
+    "typeCasting": {
+        "critical": true,
+        "description": "master_brand_id and master_platform_id are VARCHAR in lakehouse but UUID in database tables",
+        "solution": "Always use CAST(column AS uuid) when joining cross-catalog"
+    }
+}

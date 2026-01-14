@@ -1,0 +1,103 @@
+{
+    "description": "Configure which tables the AI has access to. Set 'enabled' to true/false for each table.",
+    "lakehouse.ap_south1_gold": {
+        "mv_ads_active_period": {
+            "enabled": true,
+            "description": "Active period data"
+        },
+        "mv_ads_ad_analysis": {
+            "enabled": true,
+            "description": "Ad performance by product"
+        },
+        "mv_ads_cst_analysis": {
+            "enabled": true,
+            "description": "CST/targeting analysis"
+        },
+        "mv_ads_keyword_analysis": {
+            "enabled": true,
+            "description": "Keyword performance"
+        },
+        "mv_ads_overview_analysis": {
+            "enabled": true,
+            "description": "Overview metrics"
+        },
+        "mv_ads_placement_analysis": {
+            "enabled": true,
+            "description": "Placement analysis"
+        },
+        "mv_ads_sales_analysis": {
+            "enabled": true,
+            "description": "Sales data with net_sale, gross_sale"
+        }
+    },
+    "database.global": {
+        "t_brand_unmapped_campaign": {
+            "enabled": true,
+            "description": "Unmapped campaigns"
+        },
+        "t_brand_unmapped_product": {
+            "enabled": true,
+            "description": "Unmapped products"
+        },
+        "t_master_brand": {
+            "enabled": true,
+            "description": "Brand master data"
+        },
+        "t_master_brand_campaign": {
+            "enabled": true,
+            "description": "Campaign master data"
+        },
+        "t_master_brand_category": {
+            "enabled": true,
+            "description": "Category mapping"
+        },
+        "t_master_brand_cst": {
+            "enabled": true,
+            "description": "CST data"
+        },
+        "t_master_brand_main_category": {
+            "enabled": true,
+            "description": "Main category mapping"
+        },
+        "t_master_brand_platform_cred": {
+            "enabled": true,
+            "description": "Platform credentials"
+        },
+        "t_master_brand_principal_category": {
+            "enabled": true,
+            "description": "Principal category mapping"
+        },
+        "t_master_brand_product": {
+            "enabled": true,
+            "description": "Product master data"
+        },
+        "t_master_brand_sub_brand": {
+            "enabled": true,
+            "description": "Sub-brand data"
+        },
+        "t_master_brand_sub_category": {
+            "enabled": true,
+            "description": "Sub-category mapping"
+        },
+        "t_master_brand_targeting": {
+            "enabled": true,
+            "description": "Targeting data"
+        },
+        "t_master_platform": {
+            "enabled": true,
+            "description": "Platform master data"
+        },
+        "t_master_region": {
+            "enabled": true,
+            "description": "Region master data"
+        },
+        "v_master_campaign": {
+            "enabled": true,
+            "description": "Campaign view"
+        },
+        "v_master_product": {
+            "enabled": true,
+            "description": "Product view"
+        }
+    }
+}
